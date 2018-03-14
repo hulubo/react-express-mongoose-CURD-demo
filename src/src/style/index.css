@@ -1,0 +1,32 @@
+@import '~antd/dist/antd.css';
+
+/**
+ * 全局样式
+ */
+
+ *{
+   margin: 0;padding: 0;
+   font-family: "Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Helvetica,Arial,Tahoma,sans-serif;
+ }
+
+.main-contains{
+  min-height:600px;
+  margin:0 auto;
+}
+
+.main-contains .content-inner{
+  margin: 10px 25px 25px 25px;
+  min-height: 600px;
+}
+
+
+.breadcrumb-content .ant-breadcrumb {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #eee;
+  margin: 15px 25px 15px 25px;
+  font-size:13px;
+}
+
+.ant-table-pagination.ant-pagination {
+  margin: 16px 15px;
+}

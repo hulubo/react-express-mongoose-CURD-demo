@@ -1,0 +1,67 @@
+/*header*/
+
+.navbar {
+  font-size: 14px;
+  width: 100%; // height: 66px;
+  background: #0f0f0f url(https://p1.pstatp.com/large/66be00066eb639694007) no-repeat center top;
+}
+
+.navbar li {
+    display: inline-block;
+    line-height: 48px;
+}
+
+.navbar ul li{
+  margin: 0 20px;
+}
+
+.navbar ul li a{
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    letter-spacing: .1rem;
+}
+
+
+.navbar ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar ul li a:focus {
+  text-decoration: none;
+}
+
+.navbar ul li:nth-child(2) img{
+  vertical-align: middle;
+}
+
+.navbar ul li:nth-child(2) img a{
+  font-size: 16px;
+  &:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.barstyle {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  background: transparent;
+}
+.logostyle {
+  line-height: 66px;
+  font-size: 18px;
+}
+.logostyle .Iconstyle {
+  color: white;
+  font-size: 32px!important;
+  font-weight: 100;
+  opacity: 0.7;
+  vertical-align: middle;
+  margin-right: 10px;
+  transform: rotate(180deg);
+}
+
+
+.header-active{
+  color:#fff;
+}
