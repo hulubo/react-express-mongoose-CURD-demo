@@ -26,7 +26,7 @@
 
 启动：
 - 前端：yarn start
-- 后端：yarn install
+- 后端：node app.js
 
 
 参考 ：
