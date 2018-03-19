@@ -22,8 +22,13 @@ const ajax = function(request) {
     }
     r.onreadystatechange = function(event) {
         if(r.readyState === 4) {
-            const data = JSON.parse(r.response)
-            request.success(data)
+            if(r.status == 200) {
+              const data = JSON.parse(r.response)
+              request.success(data)
+            }
+            if(r.status == 500) {
+              request.error()
+            }
         }
     }
     if (request.method === 'GET') {
@@ -48,8 +53,8 @@ const ajaxPromise = function(url, method, form) {
                     success: false,
                     message: '网络错误, 请重新尝试',
                 }
-                //promise失败扔出错误
-                reject(r)
+                resolve(r)
+                //reject(r)
             },
         }
         if (method === 'post') {

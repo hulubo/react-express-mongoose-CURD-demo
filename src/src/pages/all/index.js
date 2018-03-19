@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Table, Modal} from 'antd'
+import { Button, Table, Modal, Message } from 'antd'
 
 import AllService from '../../service/all'
 
@@ -49,10 +49,15 @@ class All extends Component {
   //请求列表数据
   getDataSourseList = async () => {
 
-    const { data } = await AllService.getList()
-    this.setState({
-      dataSource:data,
-    })
+    const { success, data, message } = await AllService.getList()
+    if(success) {
+      this.setState({
+        dataSource:data,
+      })
+    }else {
+      Message.error(`${message}`)
+    }
+    
   }
 
   //修改
@@ -85,7 +90,7 @@ class All extends Component {
 
      //数据加个key 喂antd
     dataSource.map((e,index)=> e.key = index+1)
-    
+
     return (
       <div className="content-inner">
         <Button type ='primary' onClick={ this.addDataSource }> 新建数据</Button>
