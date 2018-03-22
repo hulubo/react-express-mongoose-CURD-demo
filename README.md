@@ -20,9 +20,8 @@
 ```
 
 运行前：
-
-- 前端：$ 需进入src目录下 yarn install
 - 后端：$ yarn install
+- 前端：$ 需进入src目录下 yarn install
 - 修改antd源码 node_module/antd/es/index.js  中的message  小写'm'改为大写 'M'
 
 
