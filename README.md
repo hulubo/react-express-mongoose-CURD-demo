@@ -5,7 +5,6 @@
 ├── routes(接口)
 ├── service (服务层,一般用于需要封装的独立服务,比如db)
 ├── src (前端工程)
-│   |── src (前端源码)
 │   |── components (公用自定义组件，以文件夹为单位)
 │   |── img (图片)
 │   |── pages (页面级别组件，以文件夹为单位)
@@ -20,14 +19,11 @@
 ```
 
 运行前：
-- 后端：$ yarn install
-- 前端：$ 需进入src目录下 yarn install
-- 修改antd源码 node_module/antd/es/index.js  中的message  小写'm'改为大写 'M'
-
+- $ yarn install
 
 启动：
 - 前端：yarn start
-- 后端：node app.js
+- 后端: yarn server
 
 
 参考 ：

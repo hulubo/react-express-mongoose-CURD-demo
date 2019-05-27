@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Table, Modal, Message } from 'antd'
+import { Button, Table, Modal, message } from 'antd'
 
 import AllService from '../../service/all'
 
@@ -49,15 +49,15 @@ class All extends Component {
   //请求列表数据
   getDataSourseList = async () => {
 
-    const { success, data, message } = await AllService.getList()
+    const { success, data, msg } = await AllService.getList()
     if(success) {
       this.setState({
         dataSource:data,
       })
     }else {
-      Message.error(`${message}`)
+      message.error(`${msg}`)
     }
-    
+
   }
 
   //修改
