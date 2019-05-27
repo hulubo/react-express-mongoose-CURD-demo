@@ -12,10 +12,10 @@ export default () => {
       <ul mode="horizontal" className="barstyle">
         <li className="logostyle" key="logo">
           <Icon className="Iconstyle" type="api" />
-          <a rel="noopener noreferrer" target="_blank">react · 学习平台</a>
+          <a rel="noopener noreferrer" target="_blank">外贸分析平台</a>
         </li>
         <li key="全部">
-          <Link to="/all">全部</Link>
+          <Link to="/all">关键词排名</Link>
         </li>
         <li key="精华">
           <Link to="/good">精华</Link>

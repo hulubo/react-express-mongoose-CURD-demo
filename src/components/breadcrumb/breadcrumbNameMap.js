@@ -4,7 +4,7 @@
  */
 
 const breadcrumbNameMap = {
-  '/all': '全部',
+  '/all': '关键词排名',
   '/good': '精华',
   '/share': '分享',
   '/ask': '问答',
